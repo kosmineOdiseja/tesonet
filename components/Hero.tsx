@@ -1,7 +1,4 @@
 import React from 'react'
-import ReactPlayer from 'react-player'
-// import Video from '../public/video.mp4'
-// import Video from '../public/video.mp4'
 
 const Hero = () => {
 
@@ -59,19 +56,28 @@ const Hero = () => {
         </div>
       </div>
 {/* video   */}
-    <div>
+    <div className='flex content-center justify-center'>
       {/* <ReactPlayer 
         url='https://player.vimeo.com/video/434331751?dnt=1&id=434331751&autopause=0&transparent=0&autoplay=1&loop=1&muted=1&badge=0&byline=0&portrait=0&title=0&background=1'
         playing={true}
        /> */}
       {/* <video className='absolute '  */}
       {/* src='https://player.vimeo.com/video/434331751?dnt=1&id=434331751&autopause=0&transparent=0&autoplay=1&loop=1&muted=1&badge=0&byline=0&portrait=0&title=0&background=1'>  </video> */}
-      <video src="/Video.mp4" autoPlay loop muted playsInline></video>
-      {/* <video src="https://player.vimeo.com/video/434331751?dnt=1&id=434331751&autopause=0&transparent=0&autoplay=1&loop=1&muted=1&badge=0&byline=0&portrait=0&title=0&background=1" autoPlay loop muted playsInline></video> */}
+      {/* <video src="/Video.mp4" autoPlay loop muted playsInline  className='flex justify-center content-center]'></video> */}
+      <iframe 
+          src="https://player.vimeo.com/video/434331751?dnt=1&id=434331751&autopause=0&transparent=0&autoplay=1&loop=1&muted=1&badge=0&byline=0&portrait=0&title=0&background=1"
+        width="560"
+        height="340"
+        title='Youtube video player'
+        frameBorder="0"
+        // allowfullscreen
+       >
+
+       </iframe>
 
     </div>
     </section>
   )
 }
-
+ 
 export default Hero
