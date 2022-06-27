@@ -16,37 +16,42 @@ const Hero = () => {
       <h4 className='text-white text-4xl'> 
         Tech stats
       </h4>
-      <div className='flex flex-wrap gap-8'>
-        <div className='flex flex-col '> 
-          <h1 className='text-white text-4xl'>
-            12000+
-          </h1>
-          <div className='text-white'>
-            Servers worldwide
+      <div className='flex flex-row gap-10'>
+        <div className='flex flex-col w-[30vw] gap-5'>
+          <div className='flex flex-col '> 
+            <h1 className='text-white text-4xl'>
+              12000+
+            </h1>
+            <div className='text-white'>
+              Servers worldwide
+            </div>
+          </div>
+          <div>
+            <h1 className='text-white text-4xl'>
+              80+
+            </h1>
+            <div className='text-white'>
+              Different countries 
+            </div>
           </div>
         </div>
-        <div>
-          <h1 className='text-white text-4xl'>
-            80+
-          </h1>
-          <div className='text-white'>
-            Different countries 
+
+        <div className='flex flex-col w-[30] gap-5'>
+          <div className='flex flex-col '>
+            <h1 className='text-white text-4xl'>
+              600 <span className='text-xl'> Gbits/s</span>
+            </h1>
+            <div className='text-white'>
+              Network traffic 
+            </div>
           </div>
-        </div>
-        <div>
+          <div>
           <h1 className='text-white text-4xl'>
-            600 <span className='text-xl'> Gbits/s</span>
-          </h1>
-          <div className='text-white'>
-            Network traffic 
-          </div>
-        </div>
-        <div>
-	<h1 className='text-white text-4xl'>
-            5 <span className='text-xl'>GB</span>
-          </h1>
-          <div className='text-white'>
-            Working data set 
+              5 <span className='text-xl'>GB</span>
+            </h1>
+            <div className='text-white'>
+              Working data set 
+            </div>
           </div>
         </div>
       </div>
